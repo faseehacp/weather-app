@@ -22,7 +22,7 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 const WeatherInfoComponent: FC<InfoProps> = ({ name, value }: InfoProps) => {
     return (
         <div className="infoContainer">
-            <img className="infoIcon" src={`/icons/${name}.svg`}/>
+            <img className="infoIcon" src={`/icons/${name}.svg`} alt={name}/>
             <span className="infoLabel">
                 {value}
                 <span>{name}</span>
@@ -37,7 +37,7 @@ const ForecastComponent: FC<ForecastProps> = ({ name, value, day }: ForecastProp
             <span className="infoLabel">
                 {weekday[day].substring(0,3)}
             </span>
-            <img className="infoIcon" src={`/icons/${name}.svg`}/>
+            <img className="infoIcon" src={`/icons/${name}.svg`} alt={name}/>
             <span className="infoLabel">
                 {value}
             </span>
@@ -53,7 +53,7 @@ const WeatherComponent: FC<Props> = ({ weather, forecast }: Props) => {
                     <span>{`${Math.floor(weather?.main?.temp - 273)}°C`}</span>
                     {`  |  ${weather?.weather[0].description}`}
                 </span>
-                <img className="weatherIcon" src={`/icons/${weather?.weather[0].icon}.svg`}/>
+                <img className="weatherIcon" src={`/icons/${weather?.weather[0].icon}.svg`} alt={weather?.weather[0].icon}/>
             </div>
             <span className="location">{`${weather?.name}, ${weather?.sys?.country}`}</span>
 
