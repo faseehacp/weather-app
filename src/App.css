@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  padding: 20px 10px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px 0 #555;
+  background: #f5fbff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.appLabel {
+  color: black;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.closeButton {
+  padding: 2px 3px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.searchBox input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif
+}
+
+.searchBox button {
+  background-color: black;
+  font-size: 14px;
+  padding: 0 10px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.ChooseCityLabel {
+  color: black;
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.welcomeWeatherLogo {
+  width: 140px;
+  height: 140px;
+  margin: 40px auto;
+}
+
+.location {
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.condition {
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.condition span {
+  font-size: 28px;
+}
+
+.weatherInfoLabel {
+  margin: 20px 25px 10px;
+  text-transform: capitalize;
+  text-align: start;
+  width: 90%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.weatherContainer {
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherInfoContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 33%;
+}
+
+.forecastContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 16%;
+}
+
+.infoIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.infoLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 15px;
+  font-weight: bold;
+  color: #7d7878;
+}
+
+.infoLabel span {
+  font-size: 12px;
+  text-transform: capitalize;
+}
