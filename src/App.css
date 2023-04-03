@@ -72,12 +72,13 @@
   margin: 20px;
   border: none;
   border-radius: 2px;
+  box-shadow: 0 0px 6px 0px #c6c5c5;
 }
 
 .searchBox input {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #000;
+  border: none;
   outline: none;
   font-family: 'Roboto', sans-serif
 }
@@ -87,7 +88,7 @@
   font-size: 14px;
   padding: 0 10px;
   color: white;
-  border: 1px solid #000;
+  border: none;
   outline: none;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
