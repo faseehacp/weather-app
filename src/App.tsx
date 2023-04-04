@@ -23,7 +23,7 @@ const App: FC = () => {
 
   return (
     <div className='container'>
-      <span className='appLabel'>Weather App</span>
+      <a href='/' className='appLabel'>Weather App</a>
       {city && weather && forecast ? (
         <WeatherComponent weather={weather} forecast={forecast} />
       ) : (
